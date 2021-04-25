@@ -1,0 +1,45 @@
+.img-box {
+    column-count: 4;
+    column-gap: 3px;
+    width: 80%;
+    max-width: 1400px;
+    margin:auto;
+}
+
+.image {
+    max-width: 100%;
+    display: block;
+}
+
+.image-wrapper{
+    display: block;
+    opacity: 0.6;
+    transition: 0.9s;
+    filter: blur(1px);
+}
+
+.image-wrapper + .image-wrapper {
+    margin: 3px 0;
+}
+
+.image-wrapper:hover {
+    opacity: 1;
+    filter: sepia(0.3);
+    filter: hue-rotate(47deg);
+}
+
+.link-wrapper{
+    padding:50px;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+    }
+    
+    .author {
+        color:rgba(21, 156, 9, 0.548);
+        font-size: 40px;
+        text-decoration: none;
+        border-bottom:  none;
+        transition: 03s;
+    }
